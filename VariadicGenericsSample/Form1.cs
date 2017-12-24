@@ -18,9 +18,22 @@ namespace VariadicGenericsSample {
 		}
 
 		private void button2_Click(object sender, EventArgs e) {
-			// In Visual Studio, click [Test] -> [Debug] -> [All Test] 
-			// instead of runnung the winform
+			var buttons = MessageBoxButtons.YesNo;
+			var icon = MessageBoxIcon.Information;
+			var result = MessageBox.Show(this, m_promptText, "", buttons, icon);
+
+			if(DialogResult.Yes==result) {
+				(new TestClass()).TestMethod();
+			}
 		}
+
+		static readonly String m_promptText = @"
+In Visual Studio, click [Test] -> [Debug] -> [All Test] instead of 
+runnung the winform. Note the output will be in the debug output 
+and it's also no point except running in debug mode .. 
+
+Do you want to invoke the test method now? 
+";
 	}
 }
 
