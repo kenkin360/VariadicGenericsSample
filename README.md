@@ -1,5 +1,5 @@
 # VariadicGenericsSample
-This is my answer of a question on stackoverflow.com: 
+This is my answer to a question on stackoverflow.com: 
 
 https://stackoverflow.com/questions/6844890/simulate-variadic-templates-in-c-sharp/47948977#47948977
 
